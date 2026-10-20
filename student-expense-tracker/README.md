@@ -47,6 +47,16 @@ student-expense-tracker/
 
 You can also double-click `index.html` to open it directly. Live Server is recommended because it refreshes the page automatically while you edit.
 
+## Deploy to Vercel
+
+The repository includes a root-level `vercel.json` so that a Vercel project connected to the repository root serves this nested app correctly.
+
+1. Push the latest project files, including `vercel.json`, to the connected Git repository.
+2. In Vercel, open the project and choose **Deployments** → **Redeploy** (or push a new commit).
+3. Leave the Vercel **Root Directory** blank when deploying the repository root. The configuration routes `/` to `student-expense-tracker/index.html` and also serves the linked CSS and JavaScript files.
+
+Alternatively, set Vercel's **Root Directory** to `student-expense-tracker` and remove the need for the root routing configuration.
+
 ## How the data works
 
 On first launch, SmartSpend loads realistic sample transactions and a sample monthly budget. All subsequent changes are stored under SmartSpend-specific keys in the browser's LocalStorage. Use **Restore sample data** to return to the demo state or **Clear all data** to start from a blank tracker.

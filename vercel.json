@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/student-expense-tracker/index.html"
+    },
+    {
+      "source": "/style.css",
+      "destination": "/student-expense-tracker/style.css"
+    },
+    {
+      "source": "/script.js",
+      "destination": "/student-expense-tracker/script.js"
+    }
+  ]
+}
